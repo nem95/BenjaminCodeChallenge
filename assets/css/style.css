@@ -166,10 +166,10 @@ body .yellowFrame .description .description__images .background__ball--xl {
 }
 @media (min-width: 980px) {
   body .yellowFrame .description .description__images .background__ball--xl {
-    width: calc(58%);
-    padding-bottom: calc(58%);
+    width: calc(50%);
+    padding-bottom: calc(50%);
     bottom: 77px;
-    left: 120px;
+    left: 100px;
   }
 }
 @media (min-width: 1340px) {
@@ -207,7 +207,7 @@ body .yellowFrame .description .description__images .benjamin__sensei {
 @media (min-width: 980px) {
   body .yellowFrame .description .description__images .benjamin__sensei {
     height: auto;
-    width: 95%;
+    width: 80%;
     max-width: 750px;
     position: absolute;
     left: 50px;

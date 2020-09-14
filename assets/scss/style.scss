@@ -35,7 +35,6 @@ body {
     margin: 25px;
     border: 7px solid variables.$primary-yellow;
 
-
     @media (min-width: 980px) {
       width: calc(100% - 60px);
       max-width: calc(100vw - 60px);
@@ -150,10 +149,10 @@ body {
             z-index: 0;
 
             @media (min-width: 980px) {
-              width: calc(58%);
-              padding-bottom: calc(58%);
+              width: calc(50%);
+              padding-bottom: calc(50%);
               bottom: 77px;
-              left: 120px;
+              left: 100px;
             }
 
             @media (min-width: 1340px) {
@@ -191,7 +190,7 @@ body {
 
           @media (min-width: 980px) {
             height: auto;
-            width: 95%;
+            width: 80%;
             max-width: 750px;
             position: absolute;
             left: 50px;
@@ -236,7 +235,6 @@ body {
             }
           }
         }
-
       }
     }
   }

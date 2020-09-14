@@ -10,14 +10,17 @@ class Parallax {
     const items = [...this.items];
 
     items.filter(item => { return item.hasAttribute("data-speed") }).forEach(item => {
-      const itemSpeed = item.attributes['data-speed'].value;
-      const windowWidth = window.innerWidth;
+      const attributes = (attr) => item.attributes[`${attr}`]
+      const itemSpeed = attributes('data-speed').value;
+      const isReverse = attributes('data-reverse') && attributes('data-reverse').value || null;
       const mousePos = evt.clientX;
 
-      if (itemSpeed != 1 && mousePos <= (windowWidth / 2)) {
-        item.style.transform = `translateX(${-(mousePos / 20) * itemSpeed}px)`;
-      } else if (itemSpeed != 1 && mousePos >= (windowWidth / 2)) {
-        item.style.transform = `translateX(${-(mousePos / 20) * itemSpeed}px)`;
+      if (itemSpeed != 1) {
+        if (isReverse) {
+          return item.style.transform = `translateX(${(mousePos / 10) * itemSpeed}px)`;
+        }
+
+        item.style.transform = `translateX(${-(mousePos / 10) * itemSpeed}px)`;
       }
     });
 
